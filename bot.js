@@ -45,7 +45,7 @@ client.on("message", message => {
 });
 client.on("message", message => {
   if (message.content === "r#help") {
-      message.react('🏳️‍🌈')
+      message.react('🌈')
 message.author.send(`**r#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
@@ -73,7 +73,7 @@ ________________________________________________________
    client.on('message', message => {
 	   if(message.content.startsWith(`r#inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-                 message.react('🏳️‍🌈')
+                 message.react('🌈')
 		   var embed = new Discord.RichEmbed()
 		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
 		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
