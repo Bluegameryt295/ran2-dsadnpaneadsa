@@ -83,4 +83,31 @@ ________________________________________________________
 		   message.author.send({embed})
 	   }
    });
+client.on("message", message => {
+  if (message.content === "@RainbowBot#5709 help") {
+      message.react('🌈')
+message.author.send(`**r#set 
+ - لإنشاء رتبة الرينبو وبدا الرينبو
+- To create the role of the Rainbow & Start The Rainbow
+______________________________________________________
+r#inv 
+- لدعوة البوت
+- To Invite the bot
+______________________________________________________
+خطوات لو الرتبة م أشتغلت .!!
+1- ضع رتبة الرينبو فوق الالوان أو الرتب الملونه لو فيه
+2- ضع رتبة البوت فوق رتبة الرينبو
+_______________________________________________________
+The steps of the role did not worked .!!
+1- Place the role of the Rainbow above the colors or colored ranks if it
+2- Put the bot role above the role of the Rainbow 
+_______________________________________________________
+- صانع البوت :- iiBlueGamer295YT| SK .❤#9431
+- Bot Creator :- iiBlueGamer295YT| SK .❤#9431
+________________________________________________________
+رابط البوت - Bot Invite link
+- https://discordapp.com/oauth2/authorize?client_id=516988012156944384&permissions=268435616&scope=bot
+
+**`)
+  }})
 client.login(process.env.BOT_TOKEN)
