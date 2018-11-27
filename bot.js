@@ -84,7 +84,7 @@ ________________________________________________________
 	   }
    });
 client.on("message", message => {
-  if (message.content === "@RainbowBot#5709 help") {
+  if (message.content === "@RainbowBot help") {
       message.react('🌈')
 message.author.send(`**r#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
