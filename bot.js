@@ -4,9 +4,11 @@ const fs = require('fs');
 const suck = {
 }
 const prefix = "r#";
+
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("Rainbow , r#help .",{type: 'WATCHING'});
+          client.user.setGame(`Rainbow | r#help`,"https://www.twitch.tv/BlueGamer295YT")
   
   });
 
@@ -35,7 +37,7 @@ client.on("message", message => {
     switch(command) {
         case "set" :
         if(!message.member.hasPermission('ADMINSTRATOR')) return message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINSTRATOR`' );
-        message.guild.createRole({name : "RainbowBot .", color : "RANDOM"}).then(r => {
+        message.guild.createRole({name : "RainBow.", color : "RANDOM"}).then(r => {
             r.edit({color : "RANDOM"});
             suck[message.guild.id] = {role : r.id};
         });
@@ -43,28 +45,35 @@ client.on("message", message => {
 });
 client.on("message", message => {
   if (message.content === "r#help") {
-      message.react('🌈')
-message.author.send(`**
-r#set 
+      message.react('🏳️‍🌈')
+message.author.send(`**r#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
+______________________________________________________
 r#inv 
 - لدعوة البوت
 - To Invite the bot
+______________________________________________________
 خطوات لو الرتبة م أشتغلت .!!
 1- ضع رتبة الرينبو فوق الالوان أو الرتب الملونه لو فيه
 2- ضع رتبة البوت فوق رتبة الرينبو
+_______________________________________________________
 The steps of the role did not worked .!!
 1- Place the role of the Rainbow above the colors or colored ranks if it
 2- Put the bot role above the role of the Rainbow 
-رآبط البوت - Bot Invite link
-- http://cutt.us/RainbowBott
+_______________________________________________________
+- صانع البوت :- iiBlueGamer295YT| SK .❤#9431
+- Bot Creator :- iiBlueGamer295YT| SK .❤#9431
+________________________________________________________
+رابط البوت - Bot Invite link
+- https://discordapp.com/oauth2/authorize?client_id=516988012156944384&permissions=268435616&scope=bot
+
 **`)
   }})
    client.on('message', message => {
 	   if(message.content.startsWith(`r#inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-                 message.react('🌈')
+                 message.react('🏳️‍🌈')
 		   var embed = new Discord.RichEmbed()
 		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
 		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")
