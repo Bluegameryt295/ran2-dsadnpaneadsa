@@ -86,7 +86,7 @@ ________________________________________________________
 
 
 client.on("message", message => {
-  if (message.content === "@RainbowBot help") {
+  if (message.content === "@RainbowBot#5709 help") {
       message.react('🌈')
 message.author.send(`**r#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
@@ -113,7 +113,7 @@ ________________________________________________________
 **`)
   }})
    client.on('message', message => {
-	   if(message.content.startsWith(`@RainbowBot inv`)){
+	   if(message.content.startsWith(`@RainbowBot#5709 inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
                  message.react('🌈')
 		   var embed = new Discord.RichEmbed()
